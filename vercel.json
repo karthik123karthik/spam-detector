@@ -1,17 +1,18 @@
 {
-    "functions": {
-      "./index.py": {
-        "runtime": "python3.8"
-      }
-    },
-    "rewrites": [
+    "builds": [
       {
-        "source": "/submit",
-        "destination": "./index.py"
+        "src": "index.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/submit",
+        "dest": "index.py"
       },
       {
-        "source": "/(.*)",
-        "destination": "./index.py"
+        "src": "/(.*)",
+        "dest": "index.py"
       }
     ]
   }
