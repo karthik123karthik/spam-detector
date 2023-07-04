@@ -9,6 +9,10 @@
         {
             "src": "/(.*)",
             "dest": "./index.py"
+        },
+        {
+            "src": "/submit",
+            "dest": "./index.py"
         }
     ]
 }
