@@ -7,11 +7,11 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "./index.py"
+            "src":"/submit",
+            "dest":"./index.py"
         },
         {
-            "src": "/submit",
+            "src": "/(.*)",
             "dest": "./index.py"
         }
     ]

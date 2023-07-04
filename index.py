@@ -13,8 +13,7 @@ class MyForm(FlaskForm):
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
-    email = request.form.get('email')
-    
+    email = request.form.get('email')    
     if email:
         model = joblib.load("model");
         feature_extraction = joblib.load("feature_extraction");
