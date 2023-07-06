@@ -46,7 +46,7 @@ def render_form():
     <!DOCTYPE html>
 <html>
 <head>
-    <title>Single Page Form</title>
+    <title>Email form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
